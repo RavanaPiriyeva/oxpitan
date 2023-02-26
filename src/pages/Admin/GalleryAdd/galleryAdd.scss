@@ -1,0 +1,96 @@
+@import "../../../vendors/mixins";
+
+.galleryAdd {
+  padding: 60px 0;
+  @include backcolor;
+  .galleryAdd_title {
+    @include causestitle;
+    padding-bottom: 0;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.gallery_table {
+  padding: 50px 0;
+  .table {
+    border-radius: 5px;
+    border: 2px solid green;
+    width: 40px;
+    
+  
+  }
+}
+.gallery_add {
+  padding: 50px 0;
+  form {
+    @include display;
+    gap:20px;
+    input {
+      border: none;
+      border-radius: 5px;
+      background-color: aliceblue;
+      padding: 10px 70px;
+    }
+    .buttons {
+      padding-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+    h2{
+        @include h3;
+    }
+  }
+}
+.modal_slide1{
+  background: url("http://layerdrops.com/oxpitan/images/gallery-img8.jpg");
+  width: 100% !important;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_slide2{
+  background: url("http://layerdrops.com/oxpitan/images/gallery-img4.jpg");
+
+  width: 100% !important;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_slide3{
+  background: url("http://layerdrops.com/oxpitan/images/gallery-img7.jpg");
+  width: 100% !important;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_slide4{
+  background: url("http://layerdrops.com/oxpitan/images/gallery-img5.jpg");
+  width: 100% !important;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_slide5{
+  background: url("http://layerdrops.com/oxpitan/images/gallery-img10.jpg");
+  width: 100% !important;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_slide6{
+  background: url("http://layerdrops.com/oxpitan/images/gallery-img12.jpg");
+  width: 100% !important;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

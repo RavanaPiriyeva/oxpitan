@@ -1,0 +1,150 @@
+.volunteers {
+  padding: 50px 0;
+  input{
+    text-align: center;
+    border: none;
+    background-color: rgb(242, 240, 236);
+    padding: 10px 40px;
+    border-radius: 4px;
+   margin-bottom: 20px;
+  }
+  .volunteers_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    text-align: center;
+    h2 {
+      color: #424242;
+      font-family: Playfair Display, serif;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 700;
+      max-width: 600px;
+      
+    }
+    p {
+      font-family: Poppins, sans-serif;
+      color: blueviolet;
+      line-height: 29px;
+      font-size: 15px;
+      line-height: 26px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+  }
+  .volunteers_card {
+    
+    .card_image{
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        .volunteers_icons{
+
+          transform: translateY(0px);
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .volunteers_icons {
+      position: absolute;
+      display: block;
+      background: rgb(11,3,6);
+      background: linear-gradient(0deg, rgba(11,3,6,1) 16%, rgba(252,176,69,0) 100%);
+      width: 100%;
+      bottom: 0;
+      padding: 30px 0;
+      height: 0;
+      transition: 500ms;
+      transform: translateY(60px);
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      a:hover{
+        color:rgb(241, 174, 68) ;
+      }
+    }
+
+    .volunteers_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 5px;
+      padding: 10px 0;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+      h2 {
+        color: white;
+        font-family: Playfair Display, serif;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font-family: Poppins, sans-serif;
+        color: white;
+        line-height: 29px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+  // .title1 {
+  //   background-color: rgb(80, 186, 195);
+  // }
+  // .title2 {
+  //   background-color: rgb(227, 105, 85);
+  // }
+
+  // .title3 {
+  //   background-color: rgb(241, 174, 68);
+  // }
+  // .title4 {
+  //   background-color: rgb(134, 59, 174);
+  // }
+}
+.start {
+  background: url("https://oxpitan-gatsby.vercel.app/static/mixer-bg2-d273c5f3f20ff47aa84705de3370ca4f.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: white;
+    font-family: Playfair Display, serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 700px;
+  }
+  button {
+    margin-top: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(241, 174, 68);
+    color: white;
+    width: 150px;
+    height: 40px;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  }
+}

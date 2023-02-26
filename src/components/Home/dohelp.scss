@@ -1,0 +1,82 @@
+@import "../../vendors/mixins";
+
+.dohelp {
+  padding-top: 60px;
+  img {
+    margin-bottom: 20px;
+  
+  }
+  h2 {
+    color: #424242;
+    font-family: Playfair Display, serif;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    max-width: 600px;
+    padding-bottom: 20px;
+  }
+  p {
+    font-family: Poppins, sans-serif;
+    color: #818181;
+    line-height: 29px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 550;
+    padding-bottom: 20px;
+  }
+  .dohelp_form {
+    background-color: rgb(134, 59, 174);
+    @include display;
+    padding: 70px 30px;
+    position: relative;
+   bottom: 30%;
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      color: #fff;
+    }
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+    }
+    input {
+      background-color: white;
+      border: none;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      width: 80%;
+      height: 60px;
+      &::placeholder {
+        color: #818181;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+    textarea {
+      background-color: white;
+      border: none;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      padding-top: 20px;
+      width: 80%;
+      height: 100px;
+      &::placeholder {
+        color: #818181;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+    button{
+      @include sendButton;
+    }
+  }
+}
+@media (max-width:1200px){
+  .dohelp_form{
+    // position:sticky;
+    bottom: 0;
+  }
+}

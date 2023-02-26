@@ -1,0 +1,103 @@
+@import "../vendors//mixins";
+
+.donate_now {
+  padding: 40px 0;
+  @include backcolor;
+  .donate_now_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+
+.donate_now_area {
+  padding: 50px 0;
+  .cards {
+    width: 100%;
+  }
+  .donate_now_card {
+    padding: 50px 50px;
+    background-color: rgb(242, 240, 236);
+    h3 {
+      color: #424242;
+      font-family: Playfair Display, serif;
+      font-size: 26px;
+      font-weight: 800;
+      padding-bottom: 20px;
+      .cause_title_link {
+        text-decoration: none;
+        color: #424242;
+      }
+    }
+    p {
+      font-family: Poppins, sans-serif;
+      color: #818181;
+      line-height: 29px;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 550;
+      padding-top: 20px;
+    }
+    .causes_list {
+      list-style: none;
+      color: black;
+      font-weight: 700;
+      padding-bottom: 10px;
+      i {
+        font-size: 25px;
+        color: #424242;
+        margin-right: 10px;
+      }
+      span {
+        color: #e36955;
+        font-family: Poppins, sans-serif;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .donate_organizer {
+    background-color: rgb(242, 240, 236);
+    display: flex;
+    padding: 40px 30px;
+    margin-top: 20px;
+    img {
+      height: 100%;
+      padding-right: 10px;
+    }
+    .donate_organizer_title {
+      span {
+        font-size: 13px;
+        color: #818181;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 550;
+        color: #424242;
+        font-family: Playfair Display, serif;
+        a {
+          text-decoration: none;
+          color: #e36955;
+        }
+      }
+      ul {
+        li {
+          list-style: none;
+          color: #818181;
+          font-size: 16px;
+          font-weight: 400;
+          i {
+            color: rgb(241, 174, 68);
+            padding-right: 10px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

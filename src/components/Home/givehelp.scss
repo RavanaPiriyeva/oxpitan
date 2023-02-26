@@ -1,0 +1,57 @@
+.givehelp {
+  background-color: rgb(242, 240, 236);
+  padding: 60px 0;
+
+  h2 {
+    color: #424242;
+    font-family: Playfair Display, serif;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    max-width: 600px;
+    padding-bottom: 20px;
+  }
+  i {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }
+  .givehelp_icons {
+    display: flex;
+    // gap: 10px;
+    .icon1 {
+      // padding: 20px 40px 0 40px;
+      background-color: rgb(80, 186, 195);
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    }
+    .icon2 {
+      // padding: 20px 45px 0 45px;
+      background-color: rgb(227, 105, 85);
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    }
+    .icon3 {
+      // padding: 20px 35px 0 35px;
+      background-color: rgb(241, 174, 68);
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    }
+    h2 {
+      text-align: center;
+      color: white;
+      font-family: Playfair Display, serif;
+      font-size: 20px;
+      padding-bottom: 0;
+    }
+  }
+  .givehelp_text {
+    padding-right: 20px;
+    p {
+      font-family: Poppins, sans-serif;
+      color: #818181;
+      line-height: 29px;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+  }
+}

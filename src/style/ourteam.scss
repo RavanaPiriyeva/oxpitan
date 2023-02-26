@@ -1,0 +1,138 @@
+@import "../vendors//mixins";
+
+.ourteam {
+  padding: 40px 0;
+ 
+  @include backcolor;
+  .ourteam_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.our_team {
+  padding: 50px 0;
+  input{
+  text-align: center;
+  border: none;
+  background-color: rgb(242, 240, 236);
+  padding: 10px 40px;
+  border-radius: 4px;
+ margin-bottom: 20px;
+}
+  }
+  .volunteer_row {
+   padding-bottom: 20px;
+  }
+  .volunteers_card {
+    .card_image{
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        .volunteers_icons{
+          transform: translateY(0px);
+        }
+      }
+      
+    }
+    img {
+      width: 100%;
+    }
+    .volunteers_icons {
+      position: absolute;
+      background: rgb(11,3,6);
+      background: linear-gradient(0deg, rgba(11,3,6,1) 16%, rgba(252,176,69,0) 100%);
+      width: 100%;
+      bottom: 0;
+      padding: 30px 0;
+      height: 0;
+      transition: 500ms;
+      transform: translateY(60px);
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      a:hover {
+        color: rgb(241, 174, 68);
+      }
+    }
+
+    .volunteers_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 5px;
+      padding: 10px 0;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+      h2 {
+        color: white;
+        font-family: Playfair Display, serif;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font-family: Poppins, sans-serif;
+        color: white;
+        line-height: 29px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+  .title1 {
+    background-color: rgb(80, 186, 195);
+  }
+
+#join{
+  padding: 70px 0;
+  background-color: #f1ae44;
+
+ .join_title{
+  @include display;
+  text-align: center;
+ }
+  h3{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 70px;
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+  }
+  p{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 52px;
+    letter-spacing: 0.1px;
+  }
+  button{
+    text-transform: uppercase;
+    background-color: #424242;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 30px 0 35px;
+    line-height: 49px;
+   clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+
+    
+  }
+}

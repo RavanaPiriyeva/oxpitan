@@ -1,0 +1,29 @@
+@import "../../vendors/mixins.scss";
+.connect_icon {
+    ul {
+      display: flex;
+      gap: 15px;
+      // flex-wrap: wrap;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          i {
+            @include link;
+          }
+          .icon1 {
+            background-color: rgb(80, 186, 195);
+          }
+          .icon2 {
+            background-color: rgb(227, 105, 85);
+          }
+          .icon3 {
+            background-color: rgb(241, 174, 68);
+          }
+          .icon4 {
+            background-color: rgb(134, 59, 174);
+          }
+        }
+      }
+    }
+  }

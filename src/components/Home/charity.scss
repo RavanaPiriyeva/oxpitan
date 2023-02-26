@@ -1,0 +1,55 @@
+.charity {
+  .charity_left_area{
+  }
+  .charity_left {
+    display: flex;
+    border-bottom: 2px solid rgb(242, 240, 236);
+  
+  
+    .charity_left_icon {
+     
+      i {
+        font-size: 65px;
+        line-height: 65px;
+        color: #424242;
+      }
+    }
+    h3 {
+      font-size: 50px;
+      line-height: 55px;
+      font-weight: 800;
+      margin-bottom: 13px;
+      color: #424242;
+      font-family: Playfair Display, serif;
+    }
+    p {
+      color: #e36955;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+    }
+  }
+  .charity_right {
+    height: 500px;
+    padding: 70px 70px ;
+    h3 {
+      font-family: Playfair Display, serif;
+      max-width: 600px;
+      font-size: 40px;
+      line-height: 54px;
+      color: #fff;
+      font-weight: 700;
+      animation:pulse; 
+      animation-duration: 2s;
+    }
+    p {
+      color: #424242;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    i{
+      color: white;
+      font-size: 60px;
+      
+    }
+  }
+}

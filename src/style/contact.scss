@@ -1,0 +1,90 @@
+@import "../vendors//mixins";
+
+.contact {
+  padding: 40px 0;
+  @include backcolor;
+  .contact_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.contact_area {
+  padding: 50px 0;
+  .contact_left {
+    h2 {
+      @include h2;
+    }
+    h6 {
+      color: blueviolet;
+      padding-bottom: 30px;
+    }
+    p {
+      @include text;
+    }
+ 
+  }
+  .form {
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    .form_top {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    input {
+      @include input;
+    }
+    textarea {
+      @include input;
+    }
+    button {
+      @include sendButton;
+    
+    }
+    button:hover {
+      background-color: rgb(227, 105, 85);
+    }
+  }
+}
+
+.contact_bottom {
+  padding: 40px 0;
+  .contact_about {
+    background-color: rgb(80, 186, 195);
+    padding: 50px 30px;
+    margin-bottom: 10px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  }
+  .contact_address {
+    background-color: rgb(227, 105, 85);
+    padding: 50px 30px;
+    margin-bottom: 10px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+
+  }
+  .contact_number {
+    background-color: rgb(241, 174, 68);
+    padding: 40px 30px;
+    margin-bottom: 10px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    font-family: Playfair Display, serif;
+  }
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

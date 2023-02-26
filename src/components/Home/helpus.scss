@@ -1,0 +1,157 @@
+.help_us {
+  padding: 70px 0;
+  position: relative;
+  .help-image {
+    position: absolute;
+    animation:pulse; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+  }
+  @keyframes image {
+   
+    25% {
+      width: 40px;
+    }
+    50% {
+      width: 100px;
+    }
+    
+  }
+  @media (max-width: 992px) {
+    .help-image {
+      display: none;
+    }
+  }
+  .image1 {
+    top: 0;
+    left: 16%;
+  }
+  .image2 {
+    top: 6%;
+    left: 0;
+  }
+  .image3 {
+    top: 33%;
+    left: 9%;
+  }
+  .image4 {
+    top: 37%;
+    left: 20%;
+  }
+  .image5 {
+    top: 56%;
+    left: 10%;
+  }
+  .image6 {
+    bottom: 17%;
+    left: 9%;
+  }
+  .image7 {
+    top: -9%;
+    right: 7%;
+  }
+  .image8 {
+    top: 14%;
+    right: 9%;
+  }
+  .image9 {
+    top: 24%;
+    right: 20%;
+  }
+  .image10 {
+    top: 50%;
+    right: 14%;
+  }
+  .image11 {
+    bottom: 25%;
+    right: 3%;
+  }
+  .help_us_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    h2 {
+      text-align: center;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 700;
+      color: #424242;
+      font-family: Playfair Display, serif;
+      max-width: 600px;
+    }
+  }
+  .help_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 800;
+      text-transform: capitalize;
+      color: #424242;
+      font-family: Playfair Display, serif;
+      z-index: 1;
+    }
+    p {
+      text-align: center;
+      font-family: Poppins, sans-serif;
+      color: #818181;
+      max-width: 200px;
+      line-height: 29px;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      z-index: 1;
+    }
+    i {
+      font-size: 55px;
+      color: #424242;
+      z-index: 1;
+    }
+    .help_card_icon1 {
+      margin-left: 30px;
+      background-color: rgb(229, 245, 246);
+      padding: 20px 20px;
+      clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    }
+    .help_card_icon2 {
+      margin-left: 30px;
+      background-color: rgb(251, 233, 230);
+      padding: 20px 15px;
+      clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    }
+    .help_card_icon3 {
+      margin-left: 30px;
+      background-color: rgb(253, 243, 227);
+      padding: 20px 20px;
+      clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    }
+    .help_card_icon4 {
+      margin-left: 30px;
+      background-color: rgb(243, 235, 247);
+      padding: 20px 15px;
+      clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    }
+  }
+  .help_link {
+    padding-top: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(227, 105, 85);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    width: 130px;
+    height: 40px;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  }
+}

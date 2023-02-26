@@ -1,0 +1,88 @@
+@import "../vendors//mixins";
+
+.volunteer {
+  padding: 40px 0;
+  @include backcolor;
+  .volunteer_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.volunteer_area {
+  padding: 50px 0;
+  .volunteer_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+      @include h2;
+    }
+    h6 {
+      color: blueviolet;
+    }
+  }
+  .left_area {
+    img {
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    h4 {
+      @include h3;
+    }
+    p {
+      @include text;
+      padding-bottom: 10px;
+      i {
+        color: red;
+      }
+    }
+    .become_contact {
+     
+      span {
+        font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(175, 1, 1);
+      }
+    }
+  }
+  .form {
+    padding-left: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    input {
+      @include input;
+    }
+    textarea {
+      @include input;
+    }
+    button {
+      @include sendButton;
+    }
+    button:hover {
+      background-color: rgb(227, 105, 85);
+    }
+  }
+  @media (max-width: 768px) {
+    .form {
+      padding: 30px 0px 30px 0px;
+    }
+  }
+  @media (max-width:992px) {
+    .form {
+      padding: 30px 0px 30px 0px;
+    }
+  }
+  
+}

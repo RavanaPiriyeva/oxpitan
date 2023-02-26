@@ -1,0 +1,195 @@
+@import "../vendors//mixins";
+
+.causes_detail {
+  padding: 40px 0;
+  @include backcolor;
+  .causes_detail_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+
+.causes_detail_area {
+  padding: 59px 0;
+
+  .causes_detail_card {
+    img {
+      width: 100%;
+    }
+    p {
+      @include text;
+      padding-top: 20px;
+    }
+    .card_bottom {
+      padding: 50px 40px;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(242, 240, 236);
+      h2 {
+        @include h3;
+        padding-bottom: 15px;
+      }
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          color: black;
+          font-weight: 700;
+          padding-right: 10px;
+          i {
+            font-size: 25px;
+            color: #424242;
+            margin-right: 10px;
+          }
+          span {
+            color: #e36955;
+            font-family: Poppins, sans-serif;
+            font-weight: 800;
+          }
+        }
+      }
+      button {
+        margin-top: 10px;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: rgb(80, 186, 195);
+        color: white;
+        width: 150px;
+        height: 40px;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+      }
+      button:hover {
+        background-color: black;
+      }
+    }
+  }
+  .area_image {
+    padding-top: 30px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      img {
+        padding-bottom: 30px;
+      }
+    }
+    p {
+      @include text;
+      padding-top: 20px;
+    }
+  }
+ 
+  .organizer {
+    background-color: rgb(242, 240, 236);
+    display: flex;
+    padding: 40px 30px;
+
+    img {
+      height: 100%;
+      padding-right: 10px;
+    }
+    .organizer_title {
+      span {
+        font-size: 13px;
+        color: #818181;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 550;
+        color: #424242;
+        font-family: Playfair Display, serif;
+        a {
+          text-decoration: none;
+          color: #e36955;
+        }
+      }
+      ul {
+        li {
+          list-style: none;
+          color: #818181;
+          font-size: 16px;
+          font-weight: 400;
+          i {
+            color: rgb(241, 174, 68);
+            padding-right: 10px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .recent_donations {
+    background-color: rgb(242, 240, 236);
+    padding: 40px 30px;
+    margin-top: 10px;
+    input {
+      border: 1px solid rgb(139, 139, 139);
+      background-color: white;
+      padding: 10px 20px;
+      @include text;
+      border-radius: 4px;
+    }
+    h2 {
+      @include h3;
+    }
+    .recent_donations_title {
+      display: flex;
+      border-bottom: 1px solid white;
+      padding: 20px 20px;
+      img {
+        padding-right: 10px;
+        height: 100px;
+        width: 100px;
+      }
+      .recent_donations_text {
+        .span {
+          color: #50bac3;
+          font-weight: 600;
+          font-size: 22px;
+          font-family: "Playfair Display", sans-serif;
+        }
+        h4 {
+          font-size: 16px;
+          font-weight: 550;
+          color: #424242;
+          font-family: Playfair Display, serif;
+          span {
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #e36955;
+          }
+        }
+        ul {
+          li {
+            list-style: none;
+            color: #818181;
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .recent_donations_connect {
+    background-color: rgb(242, 240, 236);
+    @include display;
+    padding: 50px 50px;
+    margin-top: 10px;
+    h2 {
+      @include h3;
+      padding-bottom: 20px;
+    }
+   
+  }
+}

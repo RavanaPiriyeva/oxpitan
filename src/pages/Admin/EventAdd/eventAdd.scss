@@ -1,0 +1,16 @@
+@import "../../../vendors/mixins";
+
+.eventAdd {
+  padding: 60px 0;
+  @include backcolor;
+  .eventAdd_title {
+    @include causestitle;
+    padding-bottom: 0;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import "../vendors/variables";
+
+@mixin causestitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+@mixin pagetitle {
+  color: $color;
+  font-family: $title_font;
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+  padding-bottom: 40px;
+}
+@mixin backcolor {
+  background-color: $background_color;
+}
+@mixin buttonpreparty {
+  background-color: $buttonback_color;
+  color: $button_color;
+  text-transform: uppercase;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+@mixin h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #424242;
+  font-family: Playfair Display, serif;
+}
+@mixin h2 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #424242;
+  font-family: Playfair Display, serif;
+}
+@mixin span {
+  font-size: 14px;
+  color: #e36955;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+@mixin text {
+  line-height: 30px;
+  font-size: 18px;
+  color: #818181;
+  font-weight: 480;
+}
+@mixin sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+@mixin input {
+  border: none;
+  background-color: rgb(242, 240, 236);
+  padding: 20px 20px;
+  @include text;
+  border-radius: 4px;
+}
+@mixin sendButton {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  background-color: rgb(241, 174, 68);
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 15px;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+@mixin eventsDate {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+@mixin events_list {
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+@mixin display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin news_date {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  padding: 30px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+@mixin link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px 20px;
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+@mixin replyButton {
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  background-color: rgb(241, 174, 68);
+  color: white;
+  border: none;
+  line-height: 29px;
+  font-size: 13px;
+  font-weight: 700;
+  height: 40px;
+  width: 100px;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}

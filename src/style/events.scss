@@ -1,0 +1,61 @@
+@import "../vendors//mixins";
+
+.event {
+  padding: 40px 0;
+  @include backcolor;
+  .events_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.events_area {
+  padding: 50px 0;
+  button {
+    @include sendButton;
+    margin-bottom: 20px;
+  }
+  .events_card {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+    }
+    .date_of_card {
+      @include eventsDate;
+      .day_date {
+        font-size: 40px;
+        line-height: 35px;
+        font-family: "Playfair Display", sans-serif;
+        color: white;
+      }
+      .month_date {
+        font-size: 12px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+
+    .events_text {
+      @include display;
+      background-color: rgb(242, 240, 236);
+      padding: 40px 20px;
+
+      .events_title1 {
+        @include h3;
+      }
+      ul {
+        display: flex;
+        .events_list1 {
+          @include events_list;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "../vendors//mixins";
+
+.events_detail {
+  padding: 40px 0;
+  @include backcolor;
+  .events_detail_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+      
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.events_detail_image {
+  padding: 50px 0;
+  position: relative;
+  img {
+    // height: 100%;
+    width: 100%;
+  }
+  .date_of_card {
+    position: absolute;
+    top: 50px;
+   @include display;
+    padding: 30px 30px;
+    width: 100px;
+    height: 50px;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+
+    .day_date {
+      font-size: 40px;
+      line-height: 35px;
+      font-family: "Playfair Display", sans-serif;
+      color: white;
+    }
+    .month_date {
+      font-size: 12px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+.events_detail_area {
+    @media (max-width:992px){
+        .detail_left{
+            padding: 30px 0;
+        }
+    }
+  .detail_left {
+   
+    h3 {
+      @include h3;
+    }
+    p {
+      @include text;
+    }
+    button {
+      @include sendButton;
+    }
+  }
+  .detail_right {
+    margin-bottom: 20px;
+    padding: 70px 10px;
+    border-radius: 5px;
+    background-color: rgb(242, 240, 236);
+    @include display;
+    h3 {
+      @include h3;
+      text-align: center;
+    }
+    .detail_list {
+      li {
+        list-style: none;
+        color: rgb(201, 34, 34);
+        span {
+          color: black;
+        }
+        .span1{
+            padding-right: 20px;
+        }
+        .span2{
+            padding-right: 85px;
+        }
+        .span3{
+            padding-right: 55px;
+        }
+        .span4{
+            padding-right: 75px;
+        }
+        .span5{
+            padding-right: 65px;
+        }
+        .span6{
+            padding-right: 62px;
+        }
+      
+      }
+    }
+  }
+}

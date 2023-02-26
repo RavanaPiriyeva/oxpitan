@@ -1,0 +1,60 @@
+@import "../vendors//mixins";
+
+.gallery {
+  padding: 40px 0;
+  @include backcolor;
+  .galerry_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.gallery_area {
+  padding: 50px 0;
+  .gallery_photo {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    &:hover {
+      .gallery_color {
+        height: 100%;
+        width: 100%;
+      }
+      .modal_button {
+        color: white;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  .gallery_color {
+    position: absolute;
+    display: block;
+    background-color: rgb(134, 59, 174);
+    width: 0;
+    opacity: 0.8;
+    bottom: 0px;
+    border-radius: 5px;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    transition: 500ms;
+  }
+}
+.modal_button {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  z-index: 99999;
+  font-size: 30px;
+  transition: 800ms;
+}

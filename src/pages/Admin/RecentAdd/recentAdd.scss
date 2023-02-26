@@ -1,0 +1,16 @@
+@import "../../../vendors/mixins";
+
+.recentAdd {
+  padding: 60px 0;
+  @include backcolor;
+  .recentAdd_title {
+    @include causestitle;
+    padding-bottom: 0;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}

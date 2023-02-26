@@ -1,0 +1,143 @@
+@import "../../vendors//mixins";
+#footer {
+  background: url("http://layerdrops.com/oxpitan/images/footer-bg.jpg");
+  padding: 70px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+
+  .footer_title {
+    @include display;
+    h2 {
+      font-family: "Playfair Display", serif;
+      color: #fff;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 700;
+    }
+    P {
+      color: #f1ae44;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 8px;
+      padding-bottom: 20px;
+    }
+  }
+  #footer_form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 40px;
+    input {
+      background-color: #343434;
+      color: #bfbfbf;
+      border: none;
+      padding: 15px 80px;
+      width: 100%;
+    }
+    button {
+      text-transform: uppercase;
+      font-family: Poppins, sans-serif;
+      background-color: rgb(227, 105, 85);
+      color: white;
+      border: none;
+      font-size: 13px;
+      font-weight: 700;
+      height: 55px;
+      width: 150px;
+      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
+  }
+  .footer_list {
+    padding-bottom: 120px;
+    // position: relative;
+  }
+  h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 23px;
+  }
+  li {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    color: #bfbfbf;
+    font-size: 16px;
+    line-height: 38px;
+    position: relative;
+    font-weight: 400;
+    // &:hover {
+    //   #footer_link {
+    //
+    //   }
+    // }
+
+    #footer_link {
+      text-decoration: none;
+      color: #bfbfbf;
+      font-size: 16px;
+      line-height: 38px;
+      font-weight: 500;
+      overflow: hidden;
+      &:hover {
+        color: #f1ae44;
+      }
+      &::after {
+        content: " ";
+        width: 0px;
+        height: 1px;
+        background-color: #f1ae44;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0s;
+      }
+      &:hover::after {
+        width: 100%;
+        transition: all 0.3s;
+      }
+
+      &::before {
+        content: " ";
+        width: 0px;
+        height: 1px;
+        background-color: #f1ae44;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all 0.3s;
+        transition-delay: 0;
+      }
+      &:hover::before {
+        width: 100%;
+        transition-delay: 0.2s;
+      }
+    }
+  }
+}
+#footer_bottom {
+  background-color: rgb(66, 66, 66);
+  text-align: center;
+  border-top: 2px solid #555555;
+  padding-top: 60px;
+
+  p {
+    font-size: 16px;
+    color: #bfbfbf;
+    font-weight: 600;
+    a {
+      text-decoration: none;
+      color: #bfbfbf;
+    }
+  }
+  p:hover {
+    a {
+      color: #f1ae44;
+    }
+  }
+}

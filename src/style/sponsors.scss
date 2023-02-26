@@ -1,0 +1,46 @@
+@import "../vendors//mixins";
+
+.sponsors {
+  padding: 40px 0;
+  @include backcolor;
+  .sponsors_title {
+   @include causestitle;
+    h2{
+        @include pagetitle;
+    }
+    button{
+        @include buttonpreparty
+    }
+  }
+}
+.which_sponsors{
+ padding: 50px;
+  .sponsor1{
+    margin-bottom: 20px;
+    background-color: rgb(80,186,195);
+    @include sponsor;
+  }
+  .sponsor2{
+    background-color: rgb(227,105,85);
+    @include sponsor;
+  }
+  .sponsor3{
+    background-color:rgb(134,59,174);
+    @include sponsor;
+  }
+  .sponsor_title{
+   padding-left: 30px;
+    h3{
+      @include h3;
+    }
+    span{
+      @include span;
+    
+    }
+    p{
+      margin-top: 20px;
+      @include text
+    }
+  }
+ 
+}

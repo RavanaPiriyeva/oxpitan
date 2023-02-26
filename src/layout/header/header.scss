@@ -1,0 +1,210 @@
+@import "../../vendors/mixins.scss";
+
+.header_bottom_area {
+  display: flex;
+  border-bottom: 1px solid rgb(242, 240, 236);
+  
+
+  .header_bottom_left {
+    background-color: rgb(66, 66, 66);
+    clip-path: polygon(0 0, 89% 0, 75% 100%, 0% 100%);
+    padding: 80px 40px;
+    width: 40%;
+    height: 300px;
+    @media (max-width: 992px) {
+      width: 100%;
+      height: 200px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      padding: 50px;
+
+    }
+
+    .header_left_title {
+      color: #fff;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 800;
+      padding-right: 50px;
+      font-family: Playfair Display, serif;
+      max-width: 300px;
+      
+      @media (max-width: 992px) {
+        max-width: 100%;
+  
+      }
+    }
+  }
+
+  .header_bottom_right {
+    padding: 50px 0;
+    width: 60%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    .header_bottom_video {
+      background: url("https://oxpitan-gatsby.vercel.app/static/entry-video-img-e6bec51e90933f24e0bc39bddfccd029.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // padding: 70px 150px;
+      width: 100%;
+      height: 200px;
+      position: relative;
+      .header_video_link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header_video_button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(241, 174, 68);
+        border: none;
+        padding: 10px 20px;
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+        i {
+          color: white;
+        }
+      }
+      .header_video_button:hover {
+        background-color: rgb(227, 105, 85);
+      }
+    }
+    .header_right_title {
+     // padding-left: 50px;
+      .right_title {
+        color: #424242;
+        max-width: 400px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        font-family: Playfair Display, serif;
+      }
+      .right_text {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        color: #818181;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+#slide {
+  width: 100%;
+  position: relative;
+  // height: 100vh;
+}
+
+.clip_path_color {
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
+  background-color: blueviolet;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50%;
+  height: 100vh;
+}
+
+.slider_area {
+  position: relative;
+}
+
+.slider_area img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.slide_text {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: translate(-30%, -50%);
+  width: 70%;
+  color: #fff;
+  text-align: start;
+  z-index: 4;
+}
+
+.slide_text p {
+  text-decoration: underline;
+  animation: fadeInDown;
+  animation-duration: 2s;
+  font-family: "Poppins", sans-serif;
+}
+
+.slide_text h2 {
+  font-size: 75px;
+  font-weight: 700;
+  animation: pulse;
+  animation-duration: 2s;
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  font-weight: 900;
+  max-width: 700px;
+}
+
+.slide_text button {
+  @include sendButton;
+}
+
+.slide-boxs {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+
+.slide-box {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(161, 160, 160);
+  opacity: 0.5;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+  &:hover {
+    background-color: white;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide_text {
+    width: 40%;
+  }
+  .slide_text h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .slide_text button {
+    font-size: 15px;
+    padding: 4px 10px;
+  }
+
+  .slide-boxs {
+    gap: 5px;
+  }
+
+  .slide-box {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+  }
+}

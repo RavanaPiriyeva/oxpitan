@@ -1,0 +1,59 @@
+@import "../vendors//mixins";
+
+.new {
+  padding: 40px 0;
+  @include backcolor;
+  .news_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+.news_area {
+  padding: 50px 0;
+  .news_card {
+    position: relative;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+    .news_date {
+      @include display;
+      @include news_date;
+    }
+
+    .news_text {
+      .news_link {
+        text-decoration: none;
+        h3 {
+          @include h3;
+          padding-top: 20px;
+        }
+      }
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          padding-right: 10px;
+          color: rgb(235, 37, 37);
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+      p {
+        padding-top: 20px;
+        @include text;
+      }
+      button {
+        @include sendButton;
+      }
+      button:hover {
+        background-color: rgb(227, 105, 85);
+      }
+    }
+  }
+}

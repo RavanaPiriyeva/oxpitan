@@ -1,0 +1,18 @@
+#scroll_button {
+  background-color: white;
+  color: black;
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  animation:backInRight; 
+  animation-duration: 1.5s;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
